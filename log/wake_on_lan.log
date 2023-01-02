@@ -1,0 +1,7 @@
+
+                    Wake on Lan: Sending magic packet to 172.16.252.19:9 with 70:85:c2:d8:2c:c9
+
+                    Return code: 0
+                    Run command: ['wakeonlan', '-i', '172.16.252.19', '70:85:c2:d8:2c:c9']
+                    Running at: 02/01/2023 13:11:20
+                    
