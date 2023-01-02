@@ -5,5 +5,5 @@
 conf.toml
 
 # logs
-#log/*.log
-#log/*.error
+log/*.log
+log/*.error
