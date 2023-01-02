@@ -3,3 +3,7 @@
 
 # Environments
 conf.toml
+
+# logs
+log/*.log
+log/*.error
