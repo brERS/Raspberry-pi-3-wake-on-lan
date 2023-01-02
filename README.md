@@ -8,15 +8,13 @@ Inicializar host via rede
     ```
 - Host remoto com placa de rede com suporte a Wake On Lan (WOL), em alguns casos é necessário habilitar o WOL na BIOS do host remoto.
 
-- Ajuste o valor das variaveis no arquivo conf.toml conforme a necessidade.
+- Ajuste o valor das variaveis no arquivo .env conforme a necessidade.
     ```
-    [environment]
-    base_dir = '/CAMINHO/COMPLETO/ATÉ/O/DIRETORIO/DE/EXECUÇÃO/'
+    BASE_DIR = '/CAMINHO/COMPLETO/ATÉ/O/DIRETORIO/DE/EXECUÇÃO/'
 
-    [environment.host]
-    mac = '00:11:22:33:44:55' # MAC DO HOST REMOTO
+    MAC = '00:11:22:33:44:55' # MAC DO HOST REMOTO
     ```
-- Apos ajustar o arquivo conf.toml, execute o script.
+- Apos ajustar o arquivo .env, execute o script.
     ```
     python wake_on_lan_main.py
     ```

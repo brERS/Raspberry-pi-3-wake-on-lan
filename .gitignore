@@ -2,7 +2,7 @@
 *mypy_cache/
 
 # Environments
-conf.toml
+.env
 
 # logs
 log/*.log

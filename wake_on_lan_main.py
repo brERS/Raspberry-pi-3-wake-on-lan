@@ -1,14 +1,17 @@
-import toml
+import os
+
+from dotenv import load_dotenv
 
 from template.wake_on_lan import WakeOnLan
 
 
 def main():
-    env = toml.load("conf.toml")
+
+    load_dotenv()
 
     WakeOnLan(
-        env['environment']['base_dir'],
-        env['environment']['host']['mac']
+        os.environ.get('BASE_DIR'),
+        os.environ.get('MAC_ADDRESS'),
     ).send_magic_packet()
 
 
