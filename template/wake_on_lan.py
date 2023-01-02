@@ -5,9 +5,8 @@ from subprocess import run
 
 class WakeOnLan:
 
-    def __init__(self, base_dir, ip, mac):
+    def __init__(self, base_dir, mac):
         self.base_dir = base_dir
-        self.ip = ip
         self.mac = mac
         self.file_log = f'{self.base_dir}log/wake_on_lan.log'
         self.file_error = f'{self.base_dir}log/wake_on_lan.error'
@@ -16,7 +15,7 @@ class WakeOnLan:
 
         try:
             res = run(
-                ["wakeonlan", "-i", self.ip, self.mac],
+                ["wakeonlan", self.mac],
                 capture_output=True,
                 text=True,
             )

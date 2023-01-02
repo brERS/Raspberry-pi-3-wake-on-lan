@@ -14,7 +14,6 @@ Inicializar host via rede
     base_dir = '/CAMINHO/COMPLETO/ATÉ/O/DIRETORIO/DE/EXECUÇÃO/'
 
     [environment.host]
-    ip = '192.168.0.0' # IP DO HOST REMOTO
     mac = '00:11:22:33:44:55' # MAC DO HOST REMOTO
     ```
 - Apos ajustar o arquivo conf.toml, execute o script.
