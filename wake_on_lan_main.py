@@ -8,7 +8,6 @@ def main():
 
     WakeOnLan(
         env['environment']['base_dir'],
-        env['environment']['host']['ip'],
         env['environment']['host']['mac']
     ).send_magic_packet()
 
