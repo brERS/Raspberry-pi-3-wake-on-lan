@@ -5,5 +5,4 @@
 .env
 
 # logs
-log/*.log
-log/*.error
+log/*
